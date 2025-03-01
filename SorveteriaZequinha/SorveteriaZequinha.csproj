@@ -52,6 +52,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmFuncionarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFuncionarios.Designer.cs">
+      <DependentUpon>frmFuncionarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,8 +82,17 @@
     <Compile Include="frmSplash.Designer.cs">
       <DependentUpon>frmSplash.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsuario.Designer.cs">
+      <DependentUpon>frmUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmFuncionarios.resx">
+      <DependentUpon>frmFuncionarios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -86,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSplash.resx">
       <DependentUpon>frmSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsuario.resx">
+      <DependentUpon>frmUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
