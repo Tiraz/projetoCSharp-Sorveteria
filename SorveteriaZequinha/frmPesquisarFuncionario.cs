@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace SorveteriaZequinha
 {
-    public partial class frmFuncionarios : Form
+    public partial class frmPesquisarFuncionario : Form
     {
-        public frmFuncionarios()
+        public frmPesquisarFuncionario()
         {
             InitializeComponent();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
         {
 
         }
