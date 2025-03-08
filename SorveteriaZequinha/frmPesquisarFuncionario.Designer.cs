@@ -115,6 +115,7 @@
             this.btnPesquisar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnPesquisar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnPesquisar.UseVisualStyleBackColor = true;
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
             // btnLimpar
             // 

@@ -21,5 +21,12 @@ namespace SorveteriaZequinha
         {
 
         }
+
+        private void btnPesquisar_Click(object sender, EventArgs e)
+        {
+            frmFuncionarios abrir = new frmFuncionarios();
+            abrir.Show();
+            this.Hide();
+        }
     }
 }
