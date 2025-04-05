@@ -15,6 +15,7 @@ namespace SorveteriaZequinha
         public frmPesquisarFuncionario()
         {
             InitializeComponent();
+            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
