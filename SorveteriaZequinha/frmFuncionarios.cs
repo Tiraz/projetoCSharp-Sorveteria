@@ -7,11 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
+using MosaicoSolutions.ViaCep;
 
 namespace SorveteriaZequinha
 {
     public partial class frmFuncionarios : Form
     {
+        //Criando variáveis para controle do menu
+        const int MF_BYCOMMAND = 0X400;
+        [DllImport("user32")]
+        static extern int RemoveMenu(IntPtr hMenu, int nPosition, int wFlags);
+        [DllImport("user32")]
+        static extern IntPtr GetSystemMenu(IntPtr hWnd, bool bRevert);
+        [DllImport("user32")]
+        static extern int GetMenuItemCount(IntPtr hWnd);
+
         public frmFuncionarios()
         {
             InitializeComponent();
@@ -57,11 +68,25 @@ namespace SorveteriaZequinha
             cbbFuncao.Enabled = false;
             cbbUf.Enabled = false;
             dtpDataNascimento.Enabled = false;
-
+            txtBairro.Enabled = false; 
             btnCadastrar.Enabled = false;
             btnExcluir.Enabled = false;
             btnAlterar.Enabled = false;
             btnLimpar.Enabled = false;
+        }
+
+        //criando o método busca cep
+        public void buscaCEP(string cep) 
+        {
+            var viaCEPService = ViaCepService.Default();
+            var endereco = viaCEPService.ObterEndereco(cep);
+
+            txtLogradouro.Text = endereco.Logradouro;
+            txtCidade.Text = endereco.Localidade;
+            txtBairro.Text = endereco.Bairro;
+            cbbEstado.Text = endereco.UF;
+            cbbUf.Text = endereco.UF;
+            txtComplemento.Text = endereco.Complemento;
         }
 
         //habilitando os componentes
@@ -79,7 +104,7 @@ namespace SorveteriaZequinha
             cbbFuncao.Enabled = true;
             cbbUf.Enabled = true;
             dtpDataNascimento.Enabled = true;
-
+            txtBairro.Enabled = true;
             btnCadastrar.Enabled = true;
             btnNovo.Enabled = false;
             btnExcluir.Enabled = false;
@@ -91,7 +116,9 @@ namespace SorveteriaZequinha
 
         private void frmFuncionarios_Load(object sender, EventArgs e)
         {
-
+            IntPtr hMenu = GetSystemMenu(this.Handle, false);
+            int MenuCount = GetMenuItemCount(hMenu) - 1;
+            RemoveMenu(hMenu, MenuCount, MF_BYCOMMAND);
         }
 
         private void btnCadastrar_Click(object sender, EventArgs e)
@@ -107,6 +134,7 @@ namespace SorveteriaZequinha
                 || cbbEstado.Text.Equals("")
                 || cbbUf.Text.Equals("")
                 || txtComplemento.Text.Equals("")
+                || txtBairro.Text.Equals("")
                 )
 
             {
@@ -115,6 +143,27 @@ namespace SorveteriaZequinha
             else {
                 MessageBox.Show("Cadastrado com sucesso!!!!");
                 desabilitarCampos();
+            }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mskCep_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                //executando o método busca cep
+                buscaCEP(mskCep.Text);
+                txtLogradouro.Focus();
+                
             }
         }
     }

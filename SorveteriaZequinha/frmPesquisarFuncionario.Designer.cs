@@ -146,6 +146,7 @@
             this.Name = "frmPesquisarFuncionario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EmpresaABC - PesquisarFuncionario";
+            this.Load += new System.EventHandler(this.frmPesquisarFuncionario_Load);
             this.gpbPesquisarPor.ResumeLayout(false);
             this.gpbPesquisarPor.PerformLayout();
             this.ResumeLayout(false);

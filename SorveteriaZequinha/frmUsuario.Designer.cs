@@ -41,6 +41,7 @@
             this.MaximizeBox = false;
             this.Name = "frmUsuario";
             this.Text = "EmpresaABC - Usuário";
+            this.Load += new System.EventHandler(this.frmUsuario_Load);
             this.ResumeLayout(false);
 
         }
