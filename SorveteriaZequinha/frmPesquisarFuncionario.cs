@@ -34,9 +34,7 @@ namespace SorveteriaZequinha
 
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
-            frmFuncionarios abrir = new frmFuncionarios();
-            abrir.Show();
-            this.Hide();
+           ltbPesquisar.Items.Add(txtDescricao.Text);
         }
 
         private void frmPesquisarFuncionario_Load(object sender, EventArgs e)
@@ -44,6 +42,14 @@ namespace SorveteriaZequinha
             IntPtr hMenu = GetSystemMenu(this.Handle, false);
             int MenuCount = GetMenuItemCount(hMenu) - 1;
             RemoveMenu(hMenu, MenuCount, MF_BYCOMMAND);
+        }
+
+        private void ltbPesquisar_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string nome = ltbPesquisar.SelectedItem.ToString();
+            frmFuncionarios abrir = new frmFuncionarios(nome);
+            abrir.Show();
+            this.Hide();
         }
     }
 }

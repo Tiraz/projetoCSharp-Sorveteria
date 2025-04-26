@@ -3,11 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\Laboratorio-Info\\Documents\\Visual Studio 2022\\projetoCSharp-Sorveteria\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C4A62621-B3A3-4C47-B4B0-AAA95B287DAD}|SorveteriaZequinha\\SorveteriaZequinha.csproj|c:\\users\\laboratorio-info\\documents\\visual studio 2022\\projetocsharp-sorveteria\\sorveteriazequinha\\frmpesquisarfuncionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4A62621-B3A3-4C47-B4B0-AAA95B287DAD}|SorveteriaZequinha\\SorveteriaZequinha.csproj|solutionrelative:sorveteriazequinha\\frmpesquisarfuncionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A62621-B3A3-4C47-B4B0-AAA95B287DAD}|SorveteriaZequinha\\SorveteriaZequinha.csproj|c:\\users\\laboratorio-info\\documents\\visual studio 2022\\projetocsharp-sorveteria\\sorveteriazequinha\\frmpesquisarfuncionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C4A62621-B3A3-4C47-B4B0-AAA95B287DAD}|SorveteriaZequinha\\SorveteriaZequinha.csproj|solutionrelative:sorveteriazequinha\\frmpesquisarfuncionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C4A62621-B3A3-4C47-B4B0-AAA95B287DAD}|SorveteriaZequinha\\SorveteriaZequinha.csproj|c:\\users\\laboratorio-info\\documents\\visual studio 2022\\projetocsharp-sorveteria\\sorveteriazequinha\\frmfuncionarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C4A62621-B3A3-4C47-B4B0-AAA95B287DAD}|SorveteriaZequinha\\SorveteriaZequinha.csproj|solutionrelative:sorveteriazequinha\\frmfuncionarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4A62621-B3A3-4C47-B4B0-AAA95B287DAD}|SorveteriaZequinha\\SorveteriaZequinha.csproj|c:\\users\\laboratorio-info\\documents\\visual studio 2022\\projetocsharp-sorveteria\\sorveteriazequinha\\frmfuncionarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{C4A62621-B3A3-4C47-B4B0-AAA95B287DAD}|SorveteriaZequinha\\SorveteriaZequinha.csproj|C:\\Users\\Laboratorio-Info\\Documents\\Visual Studio 2022\\projetoCSharp-Sorveteria\\sorveteriazequinha\\frmfuncionarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C4A62621-B3A3-4C47-B4B0-AAA95B287DAD}|SorveteriaZequinha\\SorveteriaZequinha.csproj|solutionrelative:sorveteriazequinha\\frmfuncionarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -23,19 +31,44 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "frmFuncionarios.cs",
-              "DocumentMoniker": "C:\\Users\\Laboratorio-Info\\Documents\\Visual Studio 2022\\projetoCSharp-Sorveteria\\SorveteriaZequinha\\frmFuncionarios.cs",
-              "RelativeDocumentMoniker": "SorveteriaZequinha\\frmFuncionarios.cs",
-              "ToolTip": "C:\\Users\\Laboratorio-Info\\Documents\\Visual Studio 2022\\projetoCSharp-Sorveteria\\SorveteriaZequinha\\frmFuncionarios.cs",
-              "RelativeToolTip": "SorveteriaZequinha\\frmFuncionarios.cs",
-              "ViewState": "AgIAAI0AAAAAAAAAAAAswKMAAAAlAAAAAAAAAA==",
+              "Title": "frmPesquisarFuncionario.cs",
+              "DocumentMoniker": "C:\\Users\\Laboratorio-Info\\Documents\\Visual Studio 2022\\projetoCSharp-Sorveteria\\SorveteriaZequinha\\frmPesquisarFuncionario.cs",
+              "RelativeDocumentMoniker": "SorveteriaZequinha\\frmPesquisarFuncionario.cs",
+              "ToolTip": "C:\\Users\\Laboratorio-Info\\Documents\\Visual Studio 2022\\projetoCSharp-Sorveteria\\SorveteriaZequinha\\frmPesquisarFuncionario.cs",
+              "RelativeToolTip": "SorveteriaZequinha\\frmPesquisarFuncionario.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAYwDAAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T00:36:38.118Z",
+              "WhenOpened": "2025-04-26T00:34:55.824Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "frmPesquisarFuncionario.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Laboratorio-Info\\Documents\\Visual Studio 2022\\projetoCSharp-Sorveteria\\SorveteriaZequinha\\frmPesquisarFuncionario.cs",
+              "RelativeDocumentMoniker": "SorveteriaZequinha\\frmPesquisarFuncionario.cs",
+              "ToolTip": "C:\\Users\\Laboratorio-Info\\Documents\\Visual Studio 2022\\projetoCSharp-Sorveteria\\SorveteriaZequinha\\frmPesquisarFuncionario.cs [Design]",
+              "RelativeToolTip": "SorveteriaZequinha\\frmPesquisarFuncionario.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T00:04:20.555Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmFuncionarios.cs",
+              "DocumentMoniker": "C:\\Users\\Laboratorio-Info\\Documents\\Visual Studio 2022\\projetoCSharp-Sorveteria\\SorveteriaZequinha\\frmFuncionarios.cs",
+              "RelativeDocumentMoniker": "SorveteriaZequinha\\frmFuncionarios.cs",
+              "ToolTip": "C:\\Users\\Laboratorio-Info\\Documents\\Visual Studio 2022\\projetoCSharp-Sorveteria\\SorveteriaZequinha\\frmFuncionarios.cs",
+              "RelativeToolTip": "SorveteriaZequinha\\frmFuncionarios.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAA1wB8AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T00:07:38.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "frmFuncionarios.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Laboratorio-Info\\Documents\\Visual Studio 2022\\projetoCSharp-Sorveteria\\SorveteriaZequinha\\frmFuncionarios.cs",
               "RelativeDocumentMoniker": "SorveteriaZequinha\\frmFuncionarios.cs",

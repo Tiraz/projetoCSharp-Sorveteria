@@ -29,6 +29,13 @@ namespace SorveteriaZequinha
             //executando o metódo desabilitar campos
             desabilitarCampos();
         }
+        public frmFuncionarios(string nome) 
+        {
+            InitializeComponent();
+            //executando o metódo desabilitar campos
+            desabilitarCampos();
+            txtNome.Text = nome;
+        }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -45,6 +52,8 @@ namespace SorveteriaZequinha
             frmPesquisarFuncionario abrir = new frmPesquisarFuncionario();
             abrir.Show();
             this.Hide();
+
+
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)

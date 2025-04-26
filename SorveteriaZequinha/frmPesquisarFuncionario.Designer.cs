@@ -101,6 +101,7 @@
             this.ltbPesquisar.Name = "ltbPesquisar";
             this.ltbPesquisar.Size = new System.Drawing.Size(562, 147);
             this.ltbPesquisar.TabIndex = 4;
+            this.ltbPesquisar.SelectedIndexChanged += new System.EventHandler(this.ltbPesquisar_SelectedIndexChanged);
             // 
             // btnPesquisar
             // 
