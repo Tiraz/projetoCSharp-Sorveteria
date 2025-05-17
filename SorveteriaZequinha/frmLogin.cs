@@ -35,7 +35,7 @@ namespace SorveteriaZequinha
             nome = txtUsuario.Text.Trim();
             senha = txtSenha.Text.Trim();
 
-            if (nome.Equals("Etecia") && senha.Equals("senha"))
+            if (validarUsuarios(nome, senha))
             {
                 frmMenuPrincipal abrir = new frmMenuPrincipal();
                 abrir.Show();
@@ -85,13 +85,29 @@ namespace SorveteriaZequinha
             RemoveMenu(hMenu, MenuCount, MF_BYCOMMAND);
         }
 
-        private void btnConectar_Click(object sender, EventArgs e)
+        //criando o método validar usuário
+        public bool validarUsuarios(string usuario, string senha) 
         {
-            Conexao.obterConexao();
+            MySqlCommand comm = new MySqlCommand();
+            comm.CommandText = "SELECT * FROM tbusuarios WHERE nome = @nome and senha = @senha;";
+            comm.CommandType = CommandType.Text;
 
-            MessageBox.Show("Banco de dados conectado");
+            comm.Parameters.Clear();
+
+            comm.Parameters.Add("@nome", MySqlDbType.VarChar, 50).Value = usuario;
+            comm.Parameters.Add("@senha", MySqlDbType.VarChar, 12).Value = senha;
+
+            comm.Connection = Conexao.obterConexao();
+
+            MySqlDataReader DR;
+            DR=comm.ExecuteReader();
+            DR.Read();
+            bool resp = DR.HasRows;
 
             Conexao.fecharConexao();
+
+            return resp;
         }
+
     }
 }
